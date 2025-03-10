@@ -1,0 +1,75 @@
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    border-radius: 10px;
+    background-color: grey;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Space between fields */
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 5px;
+}
+
+tr th{
+    background-color: darkgray;
+}
+
+tr:nth-child(even) td{
+    background-color: aliceblue;
+}
+
+tr:nth-child(odd) td{
+    background-color: lightyellow;
+}
+
+th,td{
+    padding: 5px;
+}
+
+tr th:not(:first-child), tr td:not(:first-child){
+    border-left: 1px solid black;
+}
+
+table {
+    /* Change these properties */
+    --border: 1px solid black;
+    border-radius: 10px;
+
+    /* Don't change these properties */
+    border-spacing: 0;
+    border-collapse: separate;
+    border: var(--border);
+    overflow: hidden;
+
+    width: 100%;
+    text-align: center;
+}
+
+.add-btn{
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+}
+
+.add-btn:focus, .add-btn:hover{
+    background-color: #64c8a5;
+    cursor: pointer;
+}
